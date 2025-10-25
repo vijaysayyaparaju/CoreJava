@@ -115,7 +115,7 @@ public class InterviewQuestions {
 		}
 	}
 
-public static void extracNumbersFromStringAndPerformSum2(String str) {
+public static void extracNumbersFromStringAndPerformSum(String str) {
     int sum = 0;  
     for (char eachChar : str.replaceAll("[^0-9]", "").toCharArray()) {
         sum = sum + (eachChar - '0');
@@ -226,7 +226,7 @@ public static void extracNumbersFromStringAndPerformSum2(String str) {
 //		ReverseString("vijay");
 //		ReverseString2("varma");
 //		ReverseString3("abcd");
-		extracNumbersFromStringAndPerformSum2("dgsahjcxbv6237dasnmcxz09238e");
+		extracNumbersFromStringAndPerformSum("dgsahjcxbv6237dasnmcxz09238e");
 	}
 
 }
