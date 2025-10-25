@@ -158,7 +158,15 @@ public class InterviewQuestions {
 		System.out.println(RevStr);
 	}
 	
-		
+	
+	public static void extracNumbersFromStringAndPerformSum2(String str){
+		int sum =0;
+		for(char eachChar: str.replaceAll("[^0-9]","").toCharArray()){
+			sum = sum + (eachChar-'0');
+			}
+		System.out.println(str+ " : Numbers sum: "+sum);
+		}
+
 	public static void PrimeNumber(int num) {
 		int count = 0;
 		for (int i=2; i<=num; i++) {
@@ -199,8 +207,8 @@ public class InterviewQuestions {
 //		SwapeStringUsing3rdVariable("Hello", "Java");
 //		SwapeStringWithoutUsing3rdVariable("Java", "Hello");
 //		EvenOrOdd(10);
-		PrimeNumber(22);
-		PrimeNumber2();
+//		PrimeNumber(22);
+//		PrimeNumber2();
 //		ReverseNumber(123);
 //		Armstrong(153);
 //		CheckNumberPalindrome(101);
@@ -208,7 +216,7 @@ public class InterviewQuestions {
 //		ReverseString("vijay");
 //		ReverseString2("varma");
 //		ReverseString3("abcd");
-		
+		extracNumbersFromStringAndPerformSum2("dgsahjcxbv6237dasnmcxz09238e");
 	}
 
 }
