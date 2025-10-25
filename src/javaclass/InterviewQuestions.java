@@ -115,12 +115,14 @@ public class InterviewQuestions {
 		}
 	}
 
-	public static void extracNumbersFromStringAndPerformSum2(String str){
-		inr sum =0;
-		for(char eachChar: str.replaceAll("[^0-9]","").toCharArray()){
-			sum = sum + (eachChar-'0');
-		}
-		System.out.println(str+ " : Numbers sum: "+sum);
+public static void extracNumbersFromStringAndPerformSum2(String str) {
+    int sum = 0;  
+    for (char eachChar : str.replaceAll("[^0-9]", "").toCharArray()) {
+        sum = sum + (eachChar - '0');
+    }
+    System.out.println(str + " : Numbers sum: " + sum);
+} 
+
 		
 	
 	
